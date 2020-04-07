@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "utf-8">
+<title>Food-o-wasp</title>
+<style>
+
+.line {
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 15px;
+    color: #4CAF50;
+}
+
+.food-o-wasp, header-right {
+    display: inline;
+}
+.header-right {
+    float: right;
+}
+
+.header1 {
+    color: white;
+    font-size: 30px;
+    padding: 20px 0 0 20px ;
+    text-align: center;
+}
+
+header {
+    padding: 3px 10px 0px 0;
+    margin : -5px -45px -30px -5px;
+    background-image: linear-gradient(to right, rgba(76,175,80,0), rgba(76,175,80,1));
+    width: 100%;
+    height: 100%;
+}
+
+.intro {
+    background-image: url('https://cdn.guidingtech.com/imager/assets/189867/HD-Mouth-Watering-Food-Wallpapers-for-Desktop-10_4d470f76dc99e18ad75087b1b8410ea9.jpg?1573743473');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.7;
+    width: 100.75%;
+    margin: -5px -45px -30px -5px;
+}
+
+.intro-1 {
+    color: white;
+    font: bold 30px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+hr {
+    border: white;
+}
+
+.first-intro, .second-intro, .third-intro {
+    text-align: center;
+}
+
+.contain-text {
+    color:white;
+    font: italic 20px "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+button {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 30px;
+  color: #4CAF50;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #00b300;
+  color: white;
+  border: 2px solid white;
+}
+
+#typing {
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.signup, .login, .header1, .sites {
+  background-color: white;
+  border: 2px solid #4CAF50;
+  border-radius: 30px;
+  color: #4CAF50;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+a:hover {
+  background-color: #00b300;
+  color: white;
+  border: 2px solid white;
+}
+
+.secondp {
+    text-align: center;
+}
+
+.food-name {
+    text-align: center;
+}
+
+.fill-up-1, .fill-up-2, .fill-up-3 {
+    text-align: center;
+}
+.submit-btn {
+    text-align: center;
+}
+.how-it-works {
+    padding: 10px;
+    display: block;
+    background-image: linear-gradient(to right, rgba(76,175,80,0), rgba(76,175,80,1));
+    margin:21px 20px 20px 20px;
+    width: 97.47%;
+}
+label {
+    font-size: 20px;
+    color: white;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+input[type=text] {
+  width: 20%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 30px;
+  border-bottom: 2px solid #4CAF50;
+}
+
+.lastp {
+    font-size: 15px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    color: #4CAF50;
+}
+
+
+
+
+</style>
+</head>
+<body onload="typeWriter()">
+
+<header>
+<div class="food-o-wasp">
+<a class = "header1" href="#">Get the App</a>
+<span class="header-right">
+<a href="#" class="signup">Signup</a>
+<a href="#" class="login">Log in</a>
+</span>
+</div>
+</header>
+
+<div class = "intro">
+<div class = "first-intro">
+<p class = "intro-1">....want good food at affordable price?<br>
+Do Food-O-Wasp!</p>
+<p id = "typing"></p>
+</div>
+<div class = "second-intro">
+<p class = "contain-text">Compare the same meal at various sites.<br>
+   Order the most affordable one!</p>
+</div>
+<div class = "third-intro">
+<button type="button">Get Set EAT!</button>
+</div>
+</div>
+
+<hr>
+
+<div class = "how-it-works">
+<div class = "first-how-it-works">
+<div class = "fill-up-1">
+<label for="site-name">Enter the site name:</label>
+<input type="text" id="food-name" name="food-name"></div>
+<hr>
+<div class = "second-how-it-works">
+<div class = "fill-up-2">
+<label for="food-name">Enter the dish you'd like to compare:</label>
+<input type="text" id="food-name" name="food-name"></div>
+<hr>
+<div class = "third-how-it-works">
+<div class = "fill-up-3">
+<label for="place-name">Enter your location:</label>
+<input type="text" id="place-name" name="place-name"></div>
+<hr>
+<div class = "submit-btn">
+<button type="button">Submit</button></div>
+</div>
+</div>
+</div>
+</div>
+<hr>
+
+<div class = "offers">
+<p class = "line">Here are the sites you can choose from:</p>
+<div class = "first-offers">
+<a href="https://www.swiggy.com/" class="sites l1">Swiggy</a>
+<a href="https://www.zomato.com/ncr" class="sites l2">Zomato</a>
+<a href="https://www.ubereats.com/in" class="sites l3">Uber Eats</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Food Panda</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Pizza Hut</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Dominos</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Grub Hub</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Caviar</a>
+<a href="https://www.foodpanda.com/" class="sites l4">SnapFinger</a>
+<a href="https://www.foodpanda.com/" class="sites l4">Faasos</a>
+</div>
+<div class = "second-offers"></div>
+<div class = "third-offers"></div>
+</div>
+
+
+
+<script>
+function myFunction1() {
+var x = document.getElementById("mySelect").value;
+document.getElementById("demo").innerHTML = x;
+}
+
+var i = 0;
+var txt = '....we are comparing restaurants for you side by side';
+var speed = 80;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("typing").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+<hr>
+
+<footer>
+      <div class="lastfooter">
+        <p class = "lastp">Food-O-Wasp</p>
+        <p class = "lastp">All rights reserved</p>
+      </div>
+    </footer>
+
+</body>
+</html>
